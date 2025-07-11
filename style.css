@@ -1,0 +1,132 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url('.\\src\\images\\backgroud.jpg');
+    background-size: contain;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    color: rgb(246, 240, 237);
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    color: transparent;
+    width: 0px;
+}
+
+a {
+    color: rgb(246, 240, 237);
+}
+
+.box-main {
+    display: block;
+    width: auto;
+}
+
+#box-sidebar {
+    padding: 0px 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 8%;
+    background-color: rgb(126, 168, 190);
+}
+
+#box-sidebar a {
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: 200%;
+    cursor: pointer;
+    color: rgb(246, 240, 237);
+}
+
+#box-sidebar a:hover {
+    color: rgb(22, 22, 22);
+}
+
+#box-sidebar a:active {
+    color: rgb(97, 97, 97);
+}
+
+#box-content {
+    width: 100%;
+    height: 92%;
+    overflow-y: hidden;
+}
+
+.sub-box {
+    height: 92%;
+}
+
+.sub-box h1 {
+    margin: 10px;
+}
+
+.box-projetos {
+    padding: 0px 5%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.sub-box {
+    display: none;
+    text-wrap-mode: wrap;
+}
+
+#port-perfil {
+    display: block;
+}
+
+.box-projeto {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+    height: 380px;
+}
+
+.sub-box-group {
+    display: flex;
+    flex-direction: row;
+    top: 0px;
+    height: 350px;
+    background-color: rgba(40, 83, 107, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid rgba(133, 133, 133, 0.5);
+    box-shadow: 5px 5px 15px rgba(126, 168, 190, 0.726);
+}
+
+.group-text {
+    top: 0px;
+    width: 60%;
+    padding: 0px 20px;
+    height: 350px;
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.group-img {
+    top: 0px;
+    height: 350px;
+    width: 40%;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    max-height: 350px;
+    border-left: 1px solid rgba(126, 168, 190, 0.5);
+}
+
+.video-container {
+    width: 100%;
+    height: 100%;
+}
+
+.video-container iframe {
+    position: absolute;
+    height: 75%;
+    aspect-ratio: 16 / 9;
+
+    border: none;
+}
