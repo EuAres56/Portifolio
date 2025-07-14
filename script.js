@@ -12,42 +12,35 @@ function view_perfil_img() {
     const img = document.getElementById('img-perfil');
     const box = document.getElementById('box-sobre');
     const animationTime = 500;
+    const imgIsVisible = getComputedStyle(img).display === 'block';
 
-    if (img.style.display == 'block') {
-        // Transforma a imagem em um retangulo
-        box.style.height = '30vw';
-        box.style.height = '70vh';
-        box.style.borderRadius = '15px';
+    if (imgIsVisible) {
+        // Deixar ambos com aparência de retângulo antes da troca
+        [img, box].forEach(el => {
+            el.style.width = '30vw';
+            el.style.height = '70vh';
+            el.style.borderRadius = '15px';
+        });
 
-        img.style.height = '30vw';
-        img.style.height = '70vh';
-        img.style.borderRadius = '15px';
-
-        // Espera a animação antes de ocultar e mostrar o outro
         setTimeout(() => {
             box.style.display = 'block';
             img.style.display = 'none';
-            // Se necessário, remova classe do box aqui
         }, animationTime);
     } else {
-        // Transforma a div e um circulo
-        img.style.height = '30vw';
-        img.style.width = '30vw';
-        img.style.borderRadius = '50%';
+        // Deixar ambos com aparência circular antes da troca
+        [img, box].forEach(el => {
+            el.style.width = '30vw';
+            el.style.height = '30vw';
+            el.style.borderRadius = '50%';
+        });
 
-        box.style.height = '30vw';
-        box.style.width = '30vw';
-        box.style.borderRadius = "50%";
-
-        // Espera a animação antes de ocultar e mostrar o outro
         setTimeout(() => {
             img.style.display = 'block';
             box.style.display = 'none';
-            // Se necessário, remova classe do box aqui
         }, animationTime);
     }
-
 }
+
 function typeWriter(text, elementId, speed = 100, callback = null) {
     const el = document.getElementById(elementId);
     el.innerHTML = '';
@@ -65,7 +58,6 @@ function typeWriter(text, elementId, speed = 100, callback = null) {
 
     typing();
 }
-
 
 // Exemplo de uso:
 typeWriter("Olá, eu sou o", "typed-text-1", 80, () => {
