@@ -12,7 +12,7 @@
 <style></style>
 
 <body>
-    <div id="box-sidebar" class="box-main">
+    <nav id="box-sidebar" class="box-main">
         <div id="sub-box-sidebar">
             <a id="btn-perfil" class="btn-sidebar" onmouseover="open_sub_box('port-perfil', '.sub-box')">
                 Sobre mim
@@ -27,10 +27,29 @@
                 Cursos
             </a>
         </div>
-    </div>
+    </nav>
     <div id="box-content" class="box-main">
         <div id="port-perfil" class="sub-box">
-            <h1>Sobre mim</h1>
+            <div id="box-perfil">
+                <section id="section-perfil">
+                    <p id="typed-text-1" style="font-size: 4vw;"><strong></strong></p>
+                    <p><strong id="typed-text-2" style="font-size: 4.2vw; color: red;"></strong></p>
+                    <span id="typed-text-3" style="font-size: 1.4vw;"></span>
+                    <div id="section-perfil-btns">
+                        <div style="display: flex; flex-direction: row;">
+                            <a id="btn-linkedin" class="section-perfil-btn" href="">LinkedIn</a>
+                            <a id="btn-contato" class="section-perfil-btn" href="">Fale comigo</a>
+                        </div>
+                    </div>
+                </section>
+                <div id="box-perfil-img">
+                    <img id="img-perfil" src=".\src\images\perfil.png" alt="Perfil" onclick="view_perfil_img()">
+                    <div id="box-sobre" onclick="view_perfil_img()" style="display: none;">
+                        <p>anflkasnflksanfklnsaflknaslfnsalkfnlsaknflaksnflksanflnsalfknsalkfnaslfknlklkasnflsaknflskanflnsalkfnsalkfnlksanfklnaslfnsalkfnlsaknflsaknflkasnflkansflkaçsklfnçasfnçlamsfçlmasçlfmsaçlfmçam
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="port-backend" class="sub-box">
             <h1 style="font-size: 400%; text-align: center;"> <strong>PORTIFÓFIO BACK END</strong></h1>
@@ -41,21 +60,26 @@
                         <div class="group-text">
                             <p>Problema:</p>
                             <ul>
-                                Os técnicos da empresa precisavam renomear manualmente dezenas de fotos com o
+                                Os técnicos da empresa precisavam renomear manualmente dezenas de fotos com
+                                o
                                 horário
                                 exato
                                 de
-                                captura antes de entregá-las aos clientes, o que era demorado e sujeito a erros.
+                                captura antes de entregá-las aos clientes, o que era demorado e sujeito a
+                                erros.
                             </ul>
                             <p>Solução:</p>
                             <ul>
-                                Criei um executável com interface gráfica que permite ao usuário selecionar uma
+                                Criei um executável com interface gráfica que permite ao usuário selecionar
+                                uma
                                 pasta e
                                 processa
-                                todas as imagens com o Tesseract OCR. A hora é extraída diretamente da imagem e
+                                todas as imagens com o Tesseract OCR. A hora é extraída diretamente da
+                                imagem e
                                 usada
                                 para
-                                renomear os arquivos automaticamente no formato "hh.mm.ss", com cópias organizadas
+                                renomear os arquivos automaticamente no formato "hh.mm.ss", com cópias
+                                organizadas
                                 em
                                 uma
                                 nova
@@ -63,7 +87,8 @@
                             </ul>
                             <p>Técnologias:</p>
                             <ul>
-                                Python (script principal), PyQt6 (interface gráfica), Tesseract OCR (extração de
+                                Python (script principal), PyQt6 (interface gráfica), Tesseract OCR
+                                (extração de
                                 texto
                                 das
                                 imagens),
@@ -73,7 +98,7 @@
                         <div class="group-img">
                             <h2>Venha conhecer | <a href="">Download</a></h2>
                             <div class="video-container">
-                                <iframe src="https://www.youtube.com/embed/qPp9360Xfwc" frameborder="0" allowfullscreen>
+                                <iframe src="" frameborder="0" allowfullscreen>
                                 </iframe>
                             </div>
                         </div>
@@ -85,24 +110,30 @@
                         <div class="group-text">
                             <p>Problema:</p>
                             <ul>
-                                Ao final de cada solicitação de serviço, era necessário compilar manualmente todos
+                                Ao final de cada solicitação de serviço, era necessário compilar manualmente
+                                todos
                                 os
-                                relatórios escritos e fotográficos de visitas técnicas, alternando os arquivos em
+                                relatórios escritos e fotográficos de visitas técnicas, alternando os
+                                arquivos em
                                 ordem
                                 cronológica. Esse processo era repetitivo e custava muito tempo.
                             </ul>
                             <p>Solução:</p>
                             <ul>
-                                Automatizei a leitura dos arquivos Word, organizando os relatórios por visita e
+                                Automatizei a leitura dos arquivos Word, organizando os relatórios por
+                                visita e
                                 intercalando
-                                os escritos com os fotográficos. Um documento final era gerado automaticamente com
+                                os escritos com os fotográficos. Um documento final era gerado
+                                automaticamente com
                                 todos
                                 os
-                                relatórios compilados e formatados de forma padronizada para entrega ao cliente.
+                                relatórios compilados e formatados de forma padronizada para entrega ao
+                                cliente.
                             </ul>
                             <p>Técnologias:</p>
                             <ul>
-                                Python (lógica de automação), python-docx (manipulação de documentos Word), OS e
+                                Python (lógica de automação), python-docx (manipulação de documentos Word),
+                                OS e
                                 pathlib
                                 (varredura de arquivos), shutil (cópia e organização dos arquivos).
                             </ul>
@@ -110,7 +141,7 @@
                         <div class="group-img">
                             <h2>Venha conhecer | <a href="">Download</a></h2>
                             <div class="video-container">
-                                <iframe src="https://www.youtube.com/embed/qPp9360Xfwc" frameborder="0" allowfullscreen>
+                                <iframe src="" frameborder="0" allowfullscreen>
                                 </iframe>
                             </div>
                         </div>
@@ -122,15 +153,19 @@
                         <div class="group-text">
                             <p>Problema:</p>
                             <ul>
-                                A empresa precisava de um sistema centralizado para controlar dados de funcionários,
-                                veículos, viagens e folha de ponto. O processo anterior era dividido entre planilhas
+                                A empresa precisava de um sistema centralizado para controlar dados de
+                                funcionários,
+                                veículos, viagens e folha de ponto. O processo anterior era dividido entre
+                                planilhas
                                 e
                                 controles manuais, gerando atrasos e erros.
                             </ul>
                             <p>Solução:</p>
                             <ul>
-                                Desenvolvi um sistema desktop com interface gráfica que automatiza o controle
-                                administrativo. O sistema possui banco de dados local (SQLite) com sincronização
+                                Desenvolvi um sistema desktop com interface gráfica que automatiza o
+                                controle
+                                administrativo. O sistema possui banco de dados local (SQLite) com
+                                sincronização
                                 para a
                                 nuvem (Supabase), integração com a API do Tangerino para controle de ponto,
                                 roteirização
@@ -138,18 +173,20 @@
                             </ul>
                             <p>Técnologias:</p>
                             <ul>
-                                Python (lógica e automações), PyQt6 (interface gráfica), SQLite3 (banco local),
+                                Python (lógica e automações), PyQt6 (interface gráfica), SQLite3 (banco
+                                local),
                                 Supabase
                                 (banco em nuvem via API), requests (comunicação HTTP), openpyxl e win32com
                                 (manipulação
-                                de Excel), Folium (mapas), threading (processamento paralelo), psycopg2 (conexão com
+                                de Excel), Folium (mapas), threading (processamento paralelo), psycopg2
+                                (conexão com
                                 banco PostgreSQL).
                             </ul>
                         </div>
                         <div class="group-img">
                             <h2>Venha conhecer | <a href="">Download</a></h2>
                             <div class="video-container">
-                                <iframe src="https://www.youtube.com/embed/qPp9360Xfwc" frameborder="0" allowfullscreen>
+                                <iframe src="" frameborder="0" allowfullscreen>
                                 </iframe>
                             </div>
                         </div>
@@ -161,34 +198,41 @@
                         <div class="group-text">
                             <p>Problema:</p>
                             <ul>
-                                A ONG precisava de uma análise territorial detalhada sobre o Complexo da Penha (RJ)
+                                A ONG precisava de uma análise territorial detalhada sobre o Complexo da
+                                Penha (RJ)
                                 para
-                                iniciar seu trabalho social com base em dados confiáveis. No entanto, os dados
+                                iniciar seu trabalho social com base em dados confiáveis. No entanto, os
+                                dados
                                 estavam
                                 espalhados, incompletos e sem visualização geográfica.
                             </ul>
                             <p>Solução:</p>
                             <ul>
-                                Foi desenvolvido um sistema de coleta, tratamento e visualização de dados públicos.
+                                Foi desenvolvido um sistema de coleta, tratamento e visualização de dados
+                                públicos.
                                 Os
-                                dados foram organizados e completados, com preenchimento automático de coordenadas
-                                faltantes. Foram criados mapas interativos com pontos georreferenciados, facilitando
+                                dados foram organizados e completados, com preenchimento automático de
+                                coordenadas
+                                faltantes. Foram criados mapas interativos com pontos georreferenciados,
+                                facilitando
                                 a
                                 análise do território e a tomada de decisão.
                             </ul>
                             <p>Técnologias:</p>
                             <ul>
-                                Python (para manipulação e automação), Pandas e NumPy (para limpeza e organização
+                                Python (para manipulação e automação), Pandas e NumPy (para limpeza e
+                                organização
                                 dos
                                 dados), GeoPandas e Shapely (para análise geoespacial), Nominatim (para
                                 geocodificação),
-                                e Folium (para geração de mapas interativos com HTML e JavaScript embutidos).
+                                e Folium (para geração de mapas interativos com HTML e JavaScript
+                                embutidos).
                             </ul>
                         </div>
                         <div class="group-img">
                             <h2>Venha conhecer | <a href="">Download</a></h2>
                             <div class="video-container">
-                                <iframe src="https://www.youtube.com/embed/qPp9360Xfwc" frameborder="0" allowfullscreen>
+                                <iframe src="" frameborder="0" allowfullscreen>
                                 </iframe>
                             </div>
                         </div>
@@ -204,8 +248,7 @@
         </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
-
-<script src="script.js"></script>
