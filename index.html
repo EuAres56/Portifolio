@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-d...==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/projetos.css">
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <title>Ares</title>
+</head>
+
+<body>
+    <header>
+        <nav id="box-navbar">
+            <div id="sub-box-navbar">
+                <a id="btn-perfil" class="btn-navbar active-tab active-red"
+                    onclick="open_pages('btn-perfil', 'port-perfil')">Sobre</a>
+                <a id="btn-backend" class="btn-navbar" onclick="open_pages('btn-backend', 'port-backend')">Back
+                    End</a>
+                <a id="btn-frontend" class="btn-navbar" onclick="open_pages('btn-frontend', 'port-frontend')">Front
+                    End</a>
+                <a id="btn-contatos" class="btn-navbar"
+                    onclick="open_pages('btn-contatos', 'port-contatos')">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="box-content" class="box-main">
+        <section id="port-perfil" class="sub-box">
+            <div id="box-port-perfil">
+                <!-- Sobre expandido -->
+                <div id="box-sobre">
+                    <h3>Sobre mim</h3>
+
+                    <p>Sou um <strong>Desenvolvedor Full Stack</strong> com foco em <strong>desenvolvimento web</strong>
+                        e
+                        <strong>automações com Python</strong>. Desde cedo, minha paixão por tecnologia me impulsiona a
+                        buscar novos aprendizados para evoluir e entregar o máximo de valor em cada projeto.
+                    </p>
+
+                    <h4>Minhas Especialidades:</h4>
+                    <ul>
+                        <li>Transformar ideias em <strong>aplicações funcionais e eficientes</strong>.</li>
+                        <li>Resolução de problemas com foco em <strong>código limpo, organização e
+                                escalabilidade</strong>.
+                        </li>
+                        <li><strong>Desenvolvimento web</strong> utilizando <strong>Python</strong>,
+                            <strong>HTML</strong>,
+                            <strong>CSS</strong> e <strong>JavaScript</strong>.
+                        </li>
+                    </ul>
+
+                    <h4>Principais Ferramentas e Tecnologias:</h4>
+                    <ul>
+                        <li><strong>Linguagens e Frameworks:</strong> Python, Node.js, PHP, C#, Flask.</li>
+                        <li><strong>Análise de Dados:</strong> NumPy, Pandas, Folium.</li>
+                        <li><strong>Bancos de Dados:</strong> Bancos de dados relacionais com SQL.</li>
+                        <li><strong>DevOps e Versionamento:</strong> GitHub, boas práticas de versionamento.</li>
+                        <li><strong>Outras Competências:</strong> Desenvolvimento orientado a objetos (OOP), automação
+                            de
+                            tarefas administrativas e integração de sistemas.</li>
+                    </ul>
+                </div>
+                <div id="box-perfil">
+                    <div id="section-perfil">
+                        <h1>
+                            <span class="typed-animation" id="typed-text-1"></span><br>
+                            <span class="typed-animation" id="typed-text-2"></span><br>
+                            <span class="typed-animation" id="typed-text-3"></span>
+                        </h1>
+
+                        <!-- Botões iniciais (na tela principal) -->
+                        <div id="perfil-btns-iniciais">
+                            <a class="section-perfil-btn github" href="https://github.com/EuAres56" target="_blank">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                            <a class="section-perfil-btn linkedin"
+                                href="https://www.linkedin.com/in/elizeu-sanches-69a155373" target="_blank">
+                                Linked <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Clicando aqui expande -->
+                    <div id="img-perfil-box" onclick="view_perfil_img()">
+                        <img id="img-perfil" src="./src/images/perfil.png" alt="Perfil">
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section id="port-backend" class="sub-box">
+            <div class="box-projetos">
+                <h2 class="section-title">Back End</h2>
+                <div class="grid-projetos">
+
+
+                    <div class="GRID_Portifolio__card">
+
+                        <div class="GRID_Portifolio__card-intro">
+                            <div class="GRID_Portifolio__card-title">
+                                Renomeador de imagens OCR
+                            </div>
+                            <div class="GRID_Portifolio__card-tech-stack">
+                                Python - Flask - OCR
+                            </div>
+                            <div class="GRID_Portifolio__card-open-source">
+                                Código aberto
+                            </div>
+                        </div>
+                        <div class="GRID_Portifolio__card-type-list">
+                            <ul>
+                                <li>
+                                    <a target="_blank"
+                                        onclick="_gaq.push(['_trackEvent','GRADON','Cursos','Área de Cursos - Análise e Desenvolvimento de Sistemas']);"
+                                        href="">
+                                        <span>Saber mais</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="GRID_Portifolio__card">
+
+                        <div class="GRID_Portifolio__card-intro">
+                            <div class="GRID_Portifolio__card-title">
+                                Compilador de documentos
+                            </div>
+                            <div class="GRID_Portifolio__card-tech-stack">
+                                Python - Flask - Docker
+                            </div>
+                            <div class="GRID_Portifolio__card-open-source">
+                                Código aberto
+                            </div>
+                        </div>
+                        <div class="GRID_Portifolio__card-type-list">
+                            <ul>
+                                <li>
+                                    <a target="_blank"
+                                        onclick="_gaq.push(['_trackEvent','GRADON','Cursos','Área de Cursos - Análise e Desenvolvimento de Sistemas']);"
+                                        href="">
+                                        <span>Saber mais</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="GRID_Portifolio__card">
+
+                        <div class="GRID_Portifolio__card-intro">
+                            <div class="GRID_Portifolio__card-title">
+                                Data Search: Reple Social
+                            </div>
+                            <div class="GRID_Portifolio__card-tech-stack">
+                                Python - Collab - Drive - G. Workspace
+                            </div>
+                            <div class="GRID_Portifolio__card-open-source">
+                                Código aberto
+                            </div>
+                        </div>
+                        <div class="GRID_Portifolio__card-type-list">
+                            <ul>
+                                <li>
+                                    <a target="_blank"
+                                        onclick="_gaq.push(['_trackEvent','GRADON','Cursos','Área de Cursos - Análise e Desenvolvimento de Sistemas']);"
+                                        href="">
+                                        <span>Saber mais</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="GRID_Portifolio__card">
+
+                        <div class="GRID_Portifolio__card-intro">
+                            <div class="GRID_Portifolio__card-title">
+                                Sistema de suporte administrativo
+                            </div>
+                            <div class="GRID_Portifolio__card-tech-stack">
+                                Python - Flask - Docker - Pandas - Supabase - SQLite - OpenPyXl - Folium
+                            </div>
+                            <div class="GRID_Portifolio__card-open-source">
+                                Código Fechado
+                            </div>
+                        </div>
+                        <div class="GRID_Portifolio__card-type-list">
+                            <ul>
+                                <li>
+                                    <a target="_blank"
+                                        onclick="_gaq.push(['_trackEvent','GRADON','Cursos','Área de Cursos - Análise e Desenvolvimento de Sistemas']);"
+                                        href="">
+                                        <span>Saber mais</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="GRID_Portifolio__card">
+
+                        <div class="GRID_Portifolio__card-intro">
+                            <div class="GRID_Portifolio__card-title">
+                                Em breve um novo projeto
+                            </div>
+                            <div class="GRID_Portifolio__card-tech-stack">
+                                Vamos descobrir
+                            </div>
+                            <div class="GRID_Portifolio__card-open-source">
+                                Em breve
+                            </div>
+                        </div>
+                        <div class="GRID_Portifolio__card-type-list">
+                            <ul>
+                                <li>
+                                    <a target="_blank"
+                                        onclick="_gaq.push(['_trackEvent','GRADON','Cursos','Área de Cursos - Análise e Desenvolvimento de Sistemas']);"
+                                        href="">
+                                        <span>Saber mais</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="GRID_Portifolio__card">
+
+                        <div class="GRID_Portifolio__card-intro">
+                            <div class="GRID_Portifolio__card-title">
+                                Em breve um novo projeto
+                            </div>
+                            <div class="GRID_Portifolio__card-tech-stack">
+                                Vamos descobrir
+                            </div>
+                            <div class="GRID_Portifolio__card-open-source">
+                                Em breve
+                            </div>
+                        </div>
+                        <div class="GRID_Portifolio__card-type-list">
+                            <ul>
+                                <li>
+                                    <a target="_blank"
+                                        onclick="_gaq.push(['_trackEvent','GRADON','Cursos','Área de Cursos - Análise e Desenvolvimento de Sistemas']);"
+                                        href="">
+                                        <span>Saber mais</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="GRID_Portifolio__card">
+
+                        <div class="GRID_Portifolio__card-intro">
+                            <div class="GRID_Portifolio__card-title">
+                                Em breve um novo projeto
+                            </div>
+                            <div class="GRID_Portifolio__card-tech-stack">
+                                Vamos descobrir
+                            </div>
+                            <div class="GRID_Portifolio__card-open-source">
+                                Em breve
+                            </div>
+                        </div>
+                        <div class="GRID_Portifolio__card-type-list">
+                            <ul>
+                                <li>
+                                    <a target="_blank"
+                                        onclick="_gaq.push(['_trackEvent','GRADON','Cursos','Área de Cursos - Análise e Desenvolvimento de Sistemas']);"
+                                        href="">
+                                        <span>Saber mais</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="GRID_Portifolio__card">
+
+                        <div class="GRID_Portifolio__card-intro">
+                            <div class="GRID_Portifolio__card-title">
+                                Em breve um novo projeto
+                            </div>
+                            <div class="GRID_Portifolio__card-tech-stack">
+                                Vamos descobrir
+                            </div>
+                            <div class="GRID_Portifolio__card-open-source">
+                                Em breve
+                            </div>
+                        </div>
+                        <div class="GRID_Portifolio__card-type-list">
+                            <ul>
+                                <li>
+                                    <a target="_blank"
+                                        onclick="_gaq.push(['_trackEvent','GRADON','Cursos','Área de Cursos - Análise e Desenvolvimento de Sistemas']);"
+                                        href="">
+                                        <span>Saber mais</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="GRID_Portifolio__card">
+
+                        <div class="GRID_Portifolio__card-intro">
+                            <div class="GRID_Portifolio__card-title">
+                                Em breve um novo projeto
+                            </div>
+                            <div class="GRID_Portifolio__card-tech-stack">
+                                Vamos descobrir
+                            </div>
+                            <div class="GRID_Portifolio__card-open-source">
+                                Em breve
+                            </div>
+                        </div>
+                        <div class="GRID_Portifolio__card-type-list">
+                            <ul>
+                                <li>
+                                    <a target="_blank"
+                                        onclick="_gaq.push(['_trackEvent','GRADON','Cursos','Área de Cursos - Análise e Desenvolvimento de Sistemas']);"
+                                        href="">
+                                        <span>Saber mais</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="GRID_Portifolio__card">
+
+                        <div class="GRID_Portifolio__card-intro">
+                            <div class="GRID_Portifolio__card-title">
+                                Em breve um novo projeto
+                            </div>
+                            <div class="GRID_Portifolio__card-tech-stack">
+                                Vamos descobrir
+                            </div>
+                            <div class="GRID_Portifolio__card-open-source">
+                                Em breve
+                            </div>
+                        </div>
+                        <div class="GRID_Portifolio__card-type-list">
+                            <ul>
+                                <li>
+                                    <a target="_blank"
+                                        onclick="_gaq.push(['_trackEvent','GRADON','Cursos','Área de Cursos - Análise e Desenvolvimento de Sistemas']);"
+                                        href="">
+                                        <span>Saber mais</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="GRID_Portifolio__card">
+
+                        <div class="GRID_Portifolio__card-intro">
+                            <div class="GRID_Portifolio__card-title">
+                                Em breve um novo projeto
+                            </div>
+                            <div class="GRID_Portifolio__card-tech-stack">
+                                Vamos descobrir
+                            </div>
+                            <div class="GRID_Portifolio__card-open-source">
+                                Em breve
+                            </div>
+                        </div>
+                        <div class="GRID_Portifolio__card-type-list">
+                            <ul>
+                                <li>
+                                    <a target="_blank"
+                                        onclick="_gaq.push(['_trackEvent','GRADON','Cursos','Área de Cursos - Análise e Desenvolvimento de Sistemas']);"
+                                        href="">
+                                        <span>Saber mais</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="GRID_Portifolio__card">
+
+                        <div class="GRID_Portifolio__card-intro">
+                            <div class="GRID_Portifolio__card-title">
+                                Em breve um novo projeto
+                            </div>
+                            <div class="GRID_Portifolio__card-tech-stack">
+                                Vamos descobrir
+                            </div>
+                            <div class="GRID_Portifolio__card-open-source">
+                                Em breve
+                            </div>
+                        </div>
+                        <div class="GRID_Portifolio__card-type-list">
+                            <ul>
+                                <li>
+                                    <a target="_blank"
+                                        onclick="_gaq.push(['_trackEvent','GRADON','Cursos','Área de Cursos - Análise e Desenvolvimento de Sistemas']);"
+                                        href="">
+                                        <span>Saber mais</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="GRID_Portifolio__card">
+
+                        <div class="GRID_Portifolio__card-intro">
+                            <div class="GRID_Portifolio__card-title">
+                                Em breve um novo projeto
+                            </div>
+                            <div class="GRID_Portifolio__card-tech-stack">
+                                Vamos descobrir
+                            </div>
+                            <div class="GRID_Portifolio__card-open-source">
+                                Em breve
+                            </div>
+                        </div>
+                        <div class="GRID_Portifolio__card-type-list">
+                            <ul>
+                                <li>
+                                    <a target="_blank"
+                                        onclick="_gaq.push(['_trackEvent','GRADON','Cursos','Área de Cursos - Análise e Desenvolvimento de Sistemas']);"
+                                        href="">
+                                        <span>Saber mais</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="GRID_Portifolio__card">
+
+                        <div class="GRID_Portifolio__card-intro">
+                            <div class="GRID_Portifolio__card-title">
+                                Em breve um novo projeto
+                            </div>
+                            <div class="GRID_Portifolio__card-tech-stack">
+                                Vamos descobrir
+                            </div>
+                            <div class="GRID_Portifolio__card-open-source">
+                                Em breve
+                            </div>
+                        </div>
+                        <div class="GRID_Portifolio__card-type-list">
+                            <ul>
+                                <li>
+                                    <a target="_blank"
+                                        onclick="_gaq.push(['_trackEvent','GRADON','Cursos','Área de Cursos - Análise e Desenvolvimento de Sistemas']);"
+                                        href="">
+                                        <span>Saber mais</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="GRID_Portifolio__card">
+
+                        <div class="GRID_Portifolio__card-intro">
+                            <div class="GRID_Portifolio__card-title">
+                                Em breve um novo projeto
+                            </div>
+                            <div class="GRID_Portifolio__card-tech-stack">
+                                Vamos descobrir
+                            </div>
+                            <div class="GRID_Portifolio__card-open-source">
+                                Em breve
+                            </div>
+                        </div>
+                        <div class="GRID_Portifolio__card-type-list">
+                            <ul>
+                                <li>
+                                    <a target="_blank"
+                                        onclick="_gaq.push(['_trackEvent','GRADON','Cursos','Área de Cursos - Análise e Desenvolvimento de Sistemas']);"
+                                        href="">
+                                        <span>Saber mais</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="GRID_Portifolio__card">
+
+                        <div class="GRID_Portifolio__card-intro">
+                            <div class="GRID_Portifolio__card-title">
+                                Em breve um novo projeto
+                            </div>
+                            <div class="GRID_Portifolio__card-tech-stack">
+                                Vamos descobrir
+                            </div>
+                            <div class="GRID_Portifolio__card-open-source">
+                                Em breve
+                            </div>
+                        </div>
+                        <div class="GRID_Portifolio__card-type-list">
+                            <ul>
+                                <li>
+                                    <a target="_blank"
+                                        onclick="_gaq.push(['_trackEvent','GRADON','Cursos','Área de Cursos - Análise e Desenvolvimento de Sistemas']);"
+                                        href="">
+                                        <span>Saber mais</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="ver-mais">
+                <a href="#">Ver Mais</a>
+            </div>
+        </section>
+        <section id="port-frontend" class="sub-box">
+
+        </section>
+        <section id="port-contatos" class="sub-box">
+
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

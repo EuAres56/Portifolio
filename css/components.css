@@ -1,0 +1,68 @@
+/* NAVBAR */
+#box-navbar {
+    height: 80px;
+    padding: 0 10rem;
+}
+
+#sub-box-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#box-navbar a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#box-navbar a:hover {
+    color: var(--text_color_primary);
+    filter: var(--shadow_primary);
+}
+
+/* Estilo ativo da aba, por exemplo: vermelha */
+.active-red {
+    filter: var(--shadow_secondary);
+}
+
+.btn-navbar {
+    transition: color 0.3s ease, filter 0.3s ease;
+    color: var(--text_color_primary);
+}
+
+.btn-navbar.active-red {
+    color: var(--text_color_secondary);
+    filter: var(--shadow_secondary);
+}
+
+@media (max-width: 576px) {
+    #box-navbar {
+        height: 30px;
+        padding: 0 1rem;
+    }
+
+    #sub-box-navbar {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        background-color: var(--Bg_secundary);
+    }
+}
+
+@media (min-width: 577px) {
+    #box-navbar {
+        height: 50px;
+        padding: 0 5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #box-navbar {
+        height: 80px;
+        padding: 0 10rem;
+    }
+}

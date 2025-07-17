@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    /* Background effects */
+    --bg_color_body: radial-gradient(circle at center, rgba(187, 188, 248, 0.1) 40%, transparent 70%);
+    --bg_color_card: radial-gradient(circle at top, rgba(255, 17, 0, 0.767) 20%, transparent 60%);
+
+    /* Backgrounds Colors */
+    --bg_color_primary: rgb(0, 0, 0);
+    --bg_color_secondary: rgb(26, 26, 26);
+    --bg_color_tertiary: rgb(133, 0, 0);
+    --bg_color_quartiary: rgb(81, 90, 96);
+
+    /* Backgrounds Transparents Colors */
+    --bg_color_pri_trans: rgba(0, 0, 0, 0.8);
+    --bg_color_sec_trans: rgba(0, 0, 0);
+    --bg_color_ter_trans: rgba(0, 0, 0);
+    --bg_color_qua_trans: rgba(0, 0, 0);
+
+    /*Text Colors */
+    --text_color_primary: rgb(255, 255, 255);
+    --text_color_secondary: rgb(255, 0, 0);
+    --text_color_tertiary: rgb(77, 86, 91);
+    --text_color_quartiary: rgb(172, 193, 204);
+    --text_color_quintiary: rgb(76, 81, 83);
+
+    /* Colors */
+    --color_primary: rgb(255, 255, 255);
+    --color_secondary: rgb(255, 0, 0);
+    --color_tertiary: rgb(0, 0, 0);
+    --color_quartiary: rgb(0, 0, 0);
+
+    /* Transparents Colors */
+    --transparent_color_primary: rgba(255, 255, 255, 0.8);
+    --transparent_color_secondary: rgba(255, 0, 0, 0.8);
+    --transparent_color_tertiary: rgba(255, 255, 255, 0.2);
+    --transparent_color_quartiary: rgba(0, 0, 0, 0);
+
+
+    /* Shadowns */
+    --shadow_primary: drop-shadow(0 10px 10px rgba(255, 255, 255, 0.8));
+    --shadow_secondary: drop-shadow(0 10px 10px rgba(255, 0, 0, 0.8));
+    --shadow_tertiary: drop-shadow(0 10px 10px rgba(255, 255, 255, 0.4));
+    --shadow_quartiary: drop-shadow(0 10px 10px rgba(255, 0, 0, 0.4));
+
+    /* Borders */
+    --borde_1px_primary: 1px solid rgb(255, 255, 255);
+    --borde_1px_secondary: 1px solid rgb(255, 0, 0);
+    --borde_1px_tertiary: 1px solid rgba(0, 0, 0, 0);
+    --borde_1px_quartiary: 1px solid rgb(58, 64, 68);
+    ;
+    --borde_2px_primary: 2px solid rgb(255, 255, 255);
+    --borde_2px_secondary: 2px solid rgb(255, 0, 0);
+    --borde_2px_tertiary: 2px solid rgba(0, 0, 0, 0);
+    --borde_2px_quartiary: 2px solid rgba(29, 29, 29, 0);
+}
+
+* {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+ul {
+    padding-left: 10px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Poppins", sans-serif;
+}

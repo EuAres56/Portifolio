@@ -1,0 +1,34 @@
+.video-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-box-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text_color_secondary);
+    border-radius: 15px;
+    border: var(borde_2px_primary);
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.sub-box-video iframe {
+    width: 100%;
+    max-width: 700px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.video-text {
+    background-color: var(--bg_color_quartiary);
+    border-radius: 15px;
+    padding: 1rem;
+    color: var(--text_color_primary);
+    flex: 1;
+    font-size: 1rem;
+}
